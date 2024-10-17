@@ -7,18 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="study record">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lchasel的博客">
-<meta property="og:url" content="https://lucaschasel.github.io/archives/2024/10/index.html">
+<meta name="description" content="JSP的内置对象JSP中一共预先定义了9个这样的对象，分别为：request、response、session、application、out、pagecontext、config、page、exception。 request对象request 对象是 HttpServletRequest类型的对象。 response对象response 对象是 HttpServletResponse类型的对象">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSP内置对象">
+<meta property="og:url" content="https://lucaschasel.github.io/2024/10/17/JSP%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1/index.html">
 <meta property="og:site_name" content="Lchasel的博客">
-<meta property="og:description" content="study record">
+<meta property="og:description" content="JSP的内置对象JSP中一共预先定义了9个这样的对象，分别为：request、response、session、application、out、pagecontext、config、page、exception。 request对象request 对象是 HttpServletRequest类型的对象。 response对象response 对象是 HttpServletResponse类型的对象">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-10-17T06:00:04.000Z">
+<meta property="article:modified_time" content="2024-10-17T06:14:21.276Z">
 <meta property="article:author" content="Lchasel">
 <meta name="twitter:card" content="summary">
 
 
-<title >Lchasel的博客</title>
+<title >JSP内置对象</title>
 
 <!-- Favicon -->
 
@@ -57,7 +59,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"lucaschasel.github.io","author":"Lchasel","root":"/","typed_text":["noob Developer"],"theme_version":"2.2.2","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"/img/favicon.svg","icon16":"/img/favicon.svg","icon32":"/img/favicon.svg","apple_touch_icon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":false,"postUpdate":"2024-10-17 14:14:27"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-17 14:14:21"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.2" id="trm-switch-style">
@@ -203,10 +205,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            The article archive
+                            NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            云间连下榻，<br>天上接行杯。
+                            JSP内置对象
                         </h1>
 
                         
@@ -216,7 +218,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        archives
+                                        2024
                                     </span>
                                 </li>
                             </ul>
@@ -326,177 +328,88 @@
             
             <div class="trm-page-content col-lg-8">
                 <div id="trm-content" class="trm-content">
-                    <div class="row">
-    <div class="col-lg-12">
-        <div class="trm-card">
-            <div style="padding: 0 20px;">
-                
-                    <ul class="trm-tag-list"><li class="trm-tag-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">（7）</span></li></ul>
-                
-            </div>
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            10/17
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            14:00
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            Lchasel
         </div>
     </div>
 </div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="JSP的内置对象"><a href="#JSP的内置对象" class="headerlink" title="JSP的内置对象"></a>JSP的内置对象</h2><p>JSP中一共预先定义了9个这样的对象，分别为：request、response、session、application、out、pagecontext、config、page、exception。</p>
+<h3 id="request对象"><a href="#request对象" class="headerlink" title="request对象"></a>request对象</h3><p>request 对象是 HttpServletRequest类型的对象。</p>
+<h3 id="response对象"><a href="#response对象" class="headerlink" title="response对象"></a>response对象</h3><p>response 对象是 HttpServletResponse类型的对象。</p>
+<h3 id="session对象"><a href="#session对象" class="headerlink" title="session对象"></a>session对象</h3><p>session 对象是HttpSession类型的对象。只有在包含 session&#x3D;“true” 的页面中才可以被使用。</p>
+<h3 id="application对象"><a href="#application对象" class="headerlink" title="application对象"></a>application对象</h3><p>application 对象是ServletContext类型的对象。</p>
+<h3 id="out-对象"><a href="#out-对象" class="headerlink" title="out 对象"></a>out 对象</h3><p>out 对象是JspWriter类型的对象。</p>
+<h3 id="config-对象"><a href="#config-对象" class="headerlink" title="config 对象"></a>config 对象</h3><p>config 对象是ServletConfig类型的对象。</p>
+<h3 id="pageContext-对象"><a href="#pageContext-对象" class="headerlink" title="pageContext 对象"></a>pageContext 对象</h3><p>pageContext 对象是PageContext类型的对象。作用是取得任何范围的参数，通过它可以获取 JSP页面的out、request、reponse、session、application 等对象。pageContext对象的创建和初始化都是由容器来完成的，在JSP页面中可以直接使用 pageContext对象。</p>
+<h3 id="page-对象"><a href="#page-对象" class="headerlink" title="page 对象"></a>page 对象</h3><p>page 对象代表JSP本身。</p>
+<h3 id="exception-对象"><a href="#exception-对象" class="headerlink" title="exception 对象"></a>exception 对象</h3><p>exception 对象的作用是显示异常信息，只有在包含 isErrorPage&#x3D;”true” 的页面中才可以被使用。</p>
 
-<!-- history -->
+</article>
+    
+    
 
-<div class="row">
+</div>
+<div class="trm-post-next-prev row">
     <div class="col-lg-12">
         <!-- title -->
         <h5 class="trm-title-with-divider">
-            
-                2024 年的归档
-            
-            <span data-number="01"></span>
+            其他文章
+            <span data-number="02"></span>
         </h5>
     </div>
-    <div class="col-lg-12">
-        <!-- timeline -->
-        <div class="trm-timeline">
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/10/17/JSP%E6%A0%87%E7%AD%BE/" class="trm-cover-frame trm-anima-link">
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content more">
-                    
-                        <div class="trm-card-header">
-                            <div class="trm-left-side">
-                                <h6>
-                                    <a href="/2024/10/17/JSP%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1/" class="trm-anima-link">
-                                        JSP内置对象
-                                    </a>
-                                </h6>
-                                <div class="trm-text-sm trm-accent-color trm-mt-15">
-                                    <ul class="trm-card-data trm-label ">
-                                        <li class="trm-accent-color">10/17</li>
-                                        <li class="trm-accent-color">14:00</li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    
-                </div>
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    未分类
+                </a>
             </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content more">
-                    
-                        <div class="trm-card-header">
-                            <div class="trm-left-side">
-                                <h6>
-                                    <a href="/2024/10/17/JSP%E6%A0%87%E7%AD%BE/" class="trm-anima-link">
-                                        JSP标签
-                                    </a>
-                                </h6>
-                                <div class="trm-text-sm trm-accent-color trm-mt-15">
-                                    <ul class="trm-card-data trm-label ">
-                                        <li class="trm-accent-color">10/17</li>
-                                        <li class="trm-accent-color">12:20</li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content more">
-                    
-                        <div class="trm-card-header">
-                            <div class="trm-left-side">
-                                <h6>
-                                    <a href="/2024/10/17/JSP%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86/" class="trm-anima-link">
-                                        JSP运行原理
-                                    </a>
-                                </h6>
-                                <div class="trm-text-sm trm-accent-color trm-mt-15">
-                                    <ul class="trm-card-data trm-label ">
-                                        <li class="trm-accent-color">10/17</li>
-                                        <li class="trm-accent-color">12:13</li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content more">
-                    
-                        <div class="trm-card-header">
-                            <div class="trm-left-side">
-                                <h6>
-                                    <a href="/2024/10/17/servlet-%E6%A0%87%E5%87%86web.xml%E6%A0%BC%E5%BC%8F/" class="trm-anima-link">
-                                        servlet一些格式问题
-                                    </a>
-                                </h6>
-                                <div class="trm-text-sm trm-accent-color trm-mt-15">
-                                    <ul class="trm-card-data trm-label ">
-                                        <li class="trm-accent-color">10/17</li>
-                                        <li class="trm-accent-color">11:27</li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content more">
-                    
-                        <div class="trm-card-header">
-                            <div class="trm-left-side">
-                                <h6>
-                                    <a href="/2024/10/16/GameStart/" class="trm-anima-link">
-                                        GameStart
-                                    </a>
-                                </h6>
-                                <div class="trm-text-sm trm-accent-color trm-mt-15">
-                                    <ul class="trm-card-data trm-label ">
-                                        <li class="trm-accent-color">10/16</li>
-                                        <li class="trm-accent-color">22:10</li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    
-                </div>
-            </div>
-            
+            <h5>
+                <a href="/2024/10/17/JSP%E6%A0%87%E7%AD%BE/" class="trm-anima-link">
+                    JSP标签
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/10/17</li>
+                <li>12:20</li>
+                
+                
+            </ul>
         </div>
-        <!-- timeline end -->
     </div>
 </div>
+    
+</div>
 
-<!-- history end -->
-
-
-    <div class="trm-pagination">
-        <span class="page-number current">1</span>
-    </div>
-
-
+    
 
 
 
@@ -542,6 +455,10 @@
 <div class="trm-fixed-container">
     
     
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
     
     <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
         <i class="iconfont fas fa-arrow-up"></i>
@@ -575,6 +492,10 @@
     
 
     <!-- 评论插件 -->
+    
+        
+
+        
     
 
 		
