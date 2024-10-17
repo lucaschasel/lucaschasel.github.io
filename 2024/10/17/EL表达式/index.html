@@ -7,20 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="JSTL（Java server pages standard tag library，即JSP标准标签库）JSTL标签是基于JSP页面的。这些标签可以插入在JSP代码中，本质上JSTL也是提前定义好的一组标签，这些标签封装了不同的功能，在页面上调用标签时，就等于调用了封装起来的功能。（ctrl+cv） 在JSP2.0版本后开始支持JSTL标签库。在使用JSTL标签库时需要在JSP中添加对应的ta">
+<meta name="description" content="study record">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JSTL标签库">
-<meta property="og:url" content="https://lucaschasel.github.io/2024/10/17/JSTL%E6%A0%87%E7%AD%BE%E5%BA%93/index.html">
+<meta property="og:title" content="EL表达式">
+<meta property="og:url" content="https://lucaschasel.github.io/2024/10/17/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Lchasel的博客">
-<meta property="og:description" content="JSTL（Java server pages standard tag library，即JSP标准标签库）JSTL标签是基于JSP页面的。这些标签可以插入在JSP代码中，本质上JSTL也是提前定义好的一组标签，这些标签封装了不同的功能，在页面上调用标签时，就等于调用了封装起来的功能。（ctrl+cv） 在JSP2.0版本后开始支持JSTL标签库。在使用JSTL标签库时需要在JSP中添加对应的ta">
+<meta property="og:description" content="study record">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-10-17T08:50:00.000Z">
-<meta property="article:modified_time" content="2024-10-17T09:44:17.563Z">
+<meta property="article:published_time" content="2024-10-17T09:45:04.000Z">
+<meta property="article:modified_time" content="2024-10-17T09:45:04.746Z">
 <meta property="article:author" content="Lchasel">
 <meta name="twitter:card" content="summary">
 
 
-<title >JSTL标签库</title>
+<title >EL表达式</title>
 
 <!-- Favicon -->
 
@@ -59,7 +59,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"lucaschasel.github.io","author":"Lchasel","root":"/","typed_text":["noob Developer"],"theme_version":"2.2.2","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"/img/favicon.svg","icon16":"/img/favicon.svg","icon32":"/img/favicon.svg","apple_touch_icon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-17 17:44:17"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-17 17:45:04"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.2" id="trm-switch-style">
@@ -208,7 +208,7 @@
                             NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            JSTL标签库
+                            EL表达式
                         </h1>
 
                         
@@ -338,7 +338,7 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-clock trm-icon"></i><br>
-            16:50
+            17:45
         </div>
     </div>
     <div class="col-sm-4">
@@ -350,244 +350,7 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <p>JSTL（Java server pages standard tag library，即JSP标准标签库）JSTL标签是基于JSP页面的。这些标签可以插入在JSP代码中，本质上JSTL也是提前定义好的一组标签，这些标签封装了不同的功能，在页面上调用标签时，就等于调用了封装起来的功能。（ctrl+cv）</p>
-<p>在JSP2.0版本后开始支持JSTL标签库。在使用JSTL标签库时需要在JSP中添加对应的taglib指令标签。</p>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib prefix=<span class="string">&quot;c&quot;</span> uri=<span class="string">&quot;http://java.sun.com/jsp/jstl/core&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="JSTL标签分类"><a href="#JSTL标签分类" class="headerlink" title="JSTL标签分类"></a>JSTL标签分类</h3><p>根据JSTL标签所提供的功能，可以将其分为5个类别。</p>
-<p><strong>核心标签</strong></p>
-<p>最常用、最重要，也是最基本的标签</p>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib prefix=<span class="string">&quot;c&quot;</span> uri=<span class="string">&quot;http://java.sun.com/jsp/jstl/core&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>&lt;c:out&gt;</code></td>
-<td>用于在 JSP 中显示数据，就像<code>&lt;%=...&gt;</code></td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:set&gt;</code></td>
-<td>用于保存数据</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:remove&gt;</code></td>
-<td>用于删除数据</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:catch&gt;</code></td>
-<td>用来处理产生错误的异常状况，并且将错误信息储存起来</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:if&gt;</code></td>
-<td>与我们在一般程序中用的 if 一样</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:choose&gt;</code></td>
-<td>本身只当做<code>&lt;c:when&gt;</code>和<code>&lt;c:otherwise&gt;</code>的父标签</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:when&gt;</code></td>
-<td><code>&lt;c:choose&gt;</code>的子标签，用来判断条件是否成立</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:otherwise&gt;</code></td>
-<td><code>&lt;c:choose&gt;</code>的子标签，接在<code>&lt;c:when&gt;</code>标签后，当<code>&lt;c:when&gt;</code>标签判断为 false 时被执行</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:import&gt;</code></td>
-<td>检索一个绝对或相对 URL，然后将其内容暴露给页面</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:forEach&gt;</code></td>
-<td>基础迭代标签，接受多种集合类型</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:forTokens&gt;</code></td>
-<td>根据指定的分隔符来分隔内容并迭代输出</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:param&gt;</code></td>
-<td>用来给包含或重定向的页面传递参数</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:redirect&gt;</code></td>
-<td>重定向至一个新的 URL</td>
-</tr>
-<tr>
-<td align="left"><code>&lt;c:url&gt;</code></td>
-<td>使用可选的查询参数来创造一个 URL</td>
-</tr>
-</tbody></table>
-<p><strong>格式化标签</strong></p>
-<p>JSTL格式化标签用来格式化并输出文本、日期、时间、数字。</p>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib prefix=<span class="string">&quot;fmt&quot;</span> uri=<span class="string">&quot;http://java.sun.com/jsp/jstl/fmt&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>&lt;fmt:formatNumber&gt;</code></td>
-<td>使用指定的格式或精度格式化数字</td>
-</tr>
-<tr>
-<td><code>&lt;fmt:parseNumber&gt;</code></td>
-<td>解析一个代表着数字、货币或百分比的字符串</td>
-</tr>
-<tr>
-<td><code>&lt;fmt:formatDate&gt;</code></td>
-<td>使用指定的风格或模式格式化日期和时间</td>
-</tr>
-<tr>
-<td><code>&lt;fmt:parseDate&gt;</code></td>
-<td>解析一个代表着日期或时间的字符串</td>
-</tr>
-<tr>
-<td><code>&lt;fmt:bundle&gt;</code></td>
-<td>绑定资源</td>
-</tr>
-<tr>
-<td><code>&lt;fmt:setLocale&gt;</code></td>
-<td>指定地区</td>
-</tr>
-<tr>
-<td><code>&lt;fmt:setBundle&gt;</code></td>
-<td>绑定资源</td>
-</tr>
-<tr>
-<td><code>&lt;fmt:timeZone&gt;</code></td>
-<td>指定时区</td>
-</tr>
-<tr>
-<td><code>&lt;fmt:setTimeZone&gt;</code></td>
-<td>指定时区</td>
-</tr>
-<tr>
-<td><code>&lt;fmt:message&gt;</code></td>
-<td>显示资源配置文件信息</td>
-</tr>
-<tr>
-<td><code>&lt;fmt:requestEncoding&gt;</code></td>
-<td>设置 request 的字符编码</td>
-</tr>
-</tbody></table>
-<p><strong>SQL标签</strong>（用得不多）</p>
-<p>JSTL SQL标签库提供了与关系型数据库（Oracle，MySQL，SQL Server等等）进行交互的标签。</p>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib prefix=<span class="string">&quot;sql&quot;</span> uri=<span class="string">&quot;http://java.sun.com/jsp/jstl/sql&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>&lt;sql setDataSource&gt;</code></td>
-<td>指定数据源</td>
-</tr>
-<tr>
-<td><code>&lt;sql:query&gt;</code></td>
-<td>运行 SQL 查询语句</td>
-</tr>
-<tr>
-<td><code>&lt;sql:update&gt;</code></td>
-<td>运行 SQL 更新语句 百战程序员</td>
-</tr>
-<tr>
-<td><code>&lt;sql:param&gt;</code></td>
-<td>将 SQL 语句中的参数设为指定值</td>
-</tr>
-<tr>
-<td><code>&lt;sql:dateParam&gt;</code></td>
-<td>将 SQL 语句中的日期参数设为指定的<code>java.util.Date</code>对象值</td>
-</tr>
-<tr>
-<td><code>&lt;sql:transaction&gt;</code></td>
-<td>在共享数据库连接中提供嵌套的数据库行为元素，将所有语句以一个事务的形式来运行</td>
-</tr>
-</tbody></table>
-<p><strong>JSTL函数</strong></p>
-<p>JSTL包含一系列标准函数，大部分是通用的字符串处理函数。</p>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib prefix=<span class="string">&quot;fn&quot;</span> uri=<span class="string">&quot;http://java.sun.com/jsp/jstl/functions&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th><code>fn:contains()</code></th>
-<th>测试输入的字符串是否包含指定的子串</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>fn:containsIgnoreCase()</code></td>
-<td>测试输入的字符串是否包含指定的子串，大小写不敏感</td>
-</tr>
-<tr>
-<td><code>fn:endsWith()</code></td>
-<td>测试输入的字符串是否以指定的后缀结尾</td>
-</tr>
-<tr>
-<td><code>fn:escapeXml()</code></td>
-<td>跳过可以作为 XML 标记的字符</td>
-</tr>
-<tr>
-<td><code>fn:indexOf()</code></td>
-<td>返回指定字符串在输入字符串中出现的位置</td>
-</tr>
-<tr>
-<td><code>fn:join()</code></td>
-<td>将数组中的元素合成一个字符串然后输出</td>
-</tr>
-<tr>
-<td><code>fn:length()</code></td>
-<td>返回字符串长度</td>
-</tr>
-<tr>
-<td><code>fn:replace()</code></td>
-<td>将输入字符串中指定的位置替换为指定的字符串然后返回</td>
-</tr>
-<tr>
-<td><code>fn:split()</code></td>
-<td>将字符串用指定的分隔符分隔然后组成一个子字符串数组并返回</td>
-</tr>
-<tr>
-<td><code>fn:startsWith()</code></td>
-<td>测试输入字符串是否以指定的前缀开始</td>
-</tr>
-<tr>
-<td><code>fn:substring()</code></td>
-<td>返回字符串的子集</td>
-</tr>
-<tr>
-<td><code>fn:substringAfter()</code></td>
-<td>返回字符串在指定子串之后的子集</td>
-</tr>
-<tr>
-<td><code>fn:substringBefore()</code></td>
-<td>官战程序 返回字符串在指定子串之前的子集</td>
-</tr>
-<tr>
-<td><code>fn:toLowerCase()</code></td>
-<td>将字符串中的字符转为小写</td>
-</tr>
-<tr>
-<td><code>fn:toUpperCase()</code></td>
-<td>将字符串中的字符转为大写</td>
-</tr>
-<tr>
-<td><code>fn:trim()</code></td>
-<td>移除首尾的空白符</td>
-</tr>
-</tbody></table>
-
+    
 </article>
     
     
@@ -602,9 +365,10 @@
         </h5>
     </div>
     
+    
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/10/17/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="trm-cover-frame trm-anima-link">
+        <a href="/2024/10/17/JSTL%E6%A0%87%E7%AD%BE%E5%BA%93/" class="trm-cover-frame trm-anima-link">
             
             
                 <img alt="cover" class="no-fancybox" src="/img/block.jpg">
@@ -618,46 +382,14 @@
                 </a>
             </div>
             <h5>
-                <a href="/2024/10/17/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="trm-anima-link">
-                    EL表达式
+                <a href="/2024/10/17/JSTL%E6%A0%87%E7%AD%BE%E5%BA%93/" class="trm-anima-link">
+                    JSTL标签库
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
                 <li>24/10/17</li>
-                <li>17:45</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/10/17/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" #.">
-                    未分类
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/10/17/%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91/" class="trm-anima-link">
-                    请求转发
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/10/17</li>
-                <li>14:14</li>
+                <li>16:50</li>
                 
                 
             </ul>
