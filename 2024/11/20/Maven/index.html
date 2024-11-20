@@ -7,17 +7,17 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="Maven 开篇！1.Maven工程类型 POM工程 POM工程是逻辑工程，Maven并不会对该类型工程做打包处理，这些工程往往不包含具体的业务，而是用来整合其他工程的。  JAR工程 普通Java工程，在打包时会将项目打成jar包。  WAR工程 JAVA Web工程，在打包时会将项目打成war包。   2.Maven工程结构文件目录结构： 主体分为三部分  src: 源代码 target: 编">
+<meta name="description" content="Maven 开篇！1.Maven工程类型 POM工程 POM工程是逻辑工程，Maven并不会对该类型工程做打包处理，这些工程往往不包含具体的业务，而是用来整合其他工程的。  JAR工程 普通Java工程，在打包时会将项目打成jar包。  WAR工程 JAVA Web工程，在打包时会将项目打成war包。   2.Maven工程结构文件目录结构：  src: 源代码 target: 编译生成的文件 p">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Maven">
 <meta property="og:url" content="https://lucaschasel.github.io/2024/11/20/Maven/index.html">
 <meta property="og:site_name" content="Lchasel的博客">
-<meta property="og:description" content="Maven 开篇！1.Maven工程类型 POM工程 POM工程是逻辑工程，Maven并不会对该类型工程做打包处理，这些工程往往不包含具体的业务，而是用来整合其他工程的。  JAR工程 普通Java工程，在打包时会将项目打成jar包。  WAR工程 JAVA Web工程，在打包时会将项目打成war包。   2.Maven工程结构文件目录结构： 主体分为三部分  src: 源代码 target: 编">
+<meta property="og:description" content="Maven 开篇！1.Maven工程类型 POM工程 POM工程是逻辑工程，Maven并不会对该类型工程做打包处理，这些工程往往不包含具体的业务，而是用来整合其他工程的。  JAR工程 普通Java工程，在打包时会将项目打成jar包。  WAR工程 JAVA Web工程，在打包时会将项目打成war包。   2.Maven工程结构文件目录结构：  src: 源代码 target: 编译生成的文件 p">
 <meta property="og:locale">
 <meta property="og:image" content="https://lucaschasel.github.io/img/404.jpg">
 <meta property="og:image" content="https://lucaschasel.github.io/img/404.jpg">
 <meta property="article:published_time" content="2024-11-20T08:19:25.000Z">
-<meta property="article:modified_time" content="2024-11-20T08:26:22.589Z">
+<meta property="article:modified_time" content="2024-11-20T09:10:36.315Z">
 <meta property="article:author" content="Lchasel">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://lucaschasel.github.io/img/404.jpg">
@@ -62,7 +62,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"lucaschasel.github.io","author":"Lchasel","root":"/","typed_text":["noob Developer"],"theme_version":"2.2.2","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"/img/favicon.svg","icon16":"/img/favicon.svg","icon32":"/img/favicon.svg","apple_touch_icon":null,"webmanifest":null,"visibilitychange":false,"hidden":"/failure.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-20 16:26:22"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-20 17:10:36"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.2" id="trm-switch-style">
@@ -365,7 +365,6 @@
 </li>
 </ul>
 <h3 id="2-Maven工程结构"><a href="#2-Maven工程结构" class="headerlink" title="2.Maven工程结构"></a><strong>2.Maven工程结构</strong></h3><h4 id="文件目录结构："><a href="#文件目录结构：" class="headerlink" title="文件目录结构："></a><strong>文件目录结构：</strong></h4><p><img src="https://www.itbaizhan.com/wiki/imgs/image-20211111174140361.png?v=1.0.0" alt="image-20211111174140361"  data-tag='post-image' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
-<p>主体分为三部分</p>
 <ul>
 <li><strong>src:</strong> 源代码</li>
 <li><strong>target:</strong> 编译生成的文件</li>
@@ -379,7 +378,100 @@
 <li>src&#x2F;test&#x2F;java：存放项目的测试文件</li>
 <li>src&#x2F;test&#x2F;resources：存放测试时的资源文件</li>
 </ul>
-
+<h3 id="3-生命周期"><a href="#3-生命周期" class="headerlink" title="3.生命周期"></a><strong>3.生命周期</strong></h3><p>maven有三套相互独立的生命周期。分为是构建生命周期，clean生命周期（清理构建后的文件）、site生命周期（生成项目报告）。作为开发人员一般重点学习构建生命周期</p>
+<h5 id="构架生命周期"><a href="#构架生命周期" class="headerlink" title="构架生命周期"></a><strong>构架生命周期</strong></h5><table>
+<thead>
+<tr>
+<th>生命周期</th>
+<th>所做工作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>验证 validate</td>
+<td>验证项目是否正确</td>
+</tr>
+<tr>
+<td>编译 compile</td>
+<td>源代码编译</td>
+</tr>
+<tr>
+<td>测试 Test</td>
+<td>使用适当的单元测试框架（例如junit）运行测试。</td>
+</tr>
+<tr>
+<td>打包 package</td>
+<td>创建JAR&#x2F;WAR包</td>
+</tr>
+<tr>
+<td>检查 verify</td>
+<td>对集成测试的结果进行检查，以保证质量达标。</td>
+</tr>
+<tr>
+<td>安装 install</td>
+<td>安装打包的项目到本地仓库，以供其他项目使用。</td>
+</tr>
+<tr>
+<td>部署 deploy</td>
+<td>拷贝最终的工程包到远程仓库中，以共享给其他开发人员和工程。</td>
+</tr>
+</tbody></table>
+<h3 id="4-Maven常用命令（已有GUI-仅作了解）"><a href="#4-Maven常用命令（已有GUI-仅作了解）" class="headerlink" title="4.Maven常用命令（已有GUI 仅作了解）"></a><strong>4.Maven常用命令</strong>（已有GUI 仅作了解）</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>mvn clean</td>
+<td>清除编译的class文件，即删除target目录。</td>
+</tr>
+<tr>
+<td>mvn validate</td>
+<td>验证项目是否正确</td>
+</tr>
+<tr>
+<td>mvn compile</td>
+<td>编译maven项目</td>
+</tr>
+<tr>
+<td>mvn test</td>
+<td>编译maven项目及运行测试文件</td>
+</tr>
+<tr>
+<td>mvn package</td>
+<td>编译maven项目及运行测试文件，并打包</td>
+</tr>
+<tr>
+<td>mvn install</td>
+<td>编译maven项目及运行测试文件并打包，并发布到本地仓库</td>
+</tr>
+<tr>
+<td>mvn deploy</td>
+<td>部署项目到远程仓库</td>
+</tr>
+<tr>
+<td>mvn tomcat7:run</td>
+<td>使用tomcat运行项目</td>
+</tr>
+</tbody></table>
+<h3 id="5-仓库类型"><a href="#5-仓库类型" class="headerlink" title="5.仓库类型"></a><strong>5.仓库类型</strong></h3><ul>
+<li><h5 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a><strong>本地仓库</strong></h5></li>
+</ul>
+<p>本地仓库指用户计算机中的文件夹。用来存储从远程仓库或中央仓库下载的jar包，只有下载到本地仓库的jar包才能使用，项目使用jar包时优先从本地仓库查找。</p>
+<ul>
+<li><h5 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a><strong>远程仓库</strong></h5></li>
+</ul>
+<p>远程仓库一般指私服，它是架设在局域网的仓库服务，可以从中央仓库下载资源，供局域网使用，从而减少每个程序员都从中央仓库下载浪费的带宽。</p>
+<p>如果项目需要的jar包本地仓库没有，则会去远程仓库下载，下载到本地仓库即可使用。</p>
+<ul>
+<li><h5 id="中央仓库"><a href="#中央仓库" class="headerlink" title="中央仓库"></a><strong>中央仓库</strong></h5></li>
+</ul>
+<p>中央仓库是互联网上的服务器，是Maven提供的最大的仓库，里面拥有最全的jar包资源。</p>
+<p>如果项目需要的jar包，本地仓库和远程仓库都没有，则会去中央仓库下载，下载到本地仓库使用。</p>
+<p>Maven中央仓库访问页面：<a target="_blank" rel="noopener" href="https://mvnrepository.com/">https://mvnrepository.com/</a></p>
+<p><strong>难绷：远程仓库不是必须配置的，如果本地仓库没有jar包，也没有配置远程仓库，则会直接从中央仓库下载。</strong></p>
+<h3 id="6-Maven配置文件"><a href="#6-Maven配置文件" class="headerlink" title="6.Maven配置文件"></a><strong>6.Maven配置文件</strong></h3>
 </article>
     
     
